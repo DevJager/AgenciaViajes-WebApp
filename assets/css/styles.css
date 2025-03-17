@@ -1,69 +1,92 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e2e8f0, #ffffff);
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
 h1, h2 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 25px;
+    color: #444;
 }
 
 nav {
     text-align: center;
-    margin: 20px;
+    margin: 25px;
 }
 
 nav a {
     text-decoration: none;
-    color: #007BFF;
+    color: #3b82f6;
     font-size: 18px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #1e40af;
 }
 
 form {
-    background: #fff;
-    padding: 20px;
-    margin: 20px auto;
-    width: 300px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: #ffffff;
+    padding: 25px;
+    margin: 30px auto;
+    width: 340px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 label {
+    font-weight: 600;
+    margin-bottom: 6px;
     display: block;
-    margin-bottom: 5px;
+    color: #555;
 }
 
 input[type="text"],
 input[type="date"],
 input[type="number"] {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus {
+    border-color: #3b82f6;
+    outline: none;
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
 }
 
 input[type="submit"] {
-    background: #007BFF;
-    color: #fff;
+    background: #3b82f6;
+    color: #ffffff;
     border: none;
-    padding: 10px;
+    padding: 12px;
     width: 100%;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
 }
 
 input[type="submit"]:hover {
-    background: #0056b3;
+    background: #2563eb;
 }
 
 .resultado {
-    background: #fff;
-    padding: 15px;
-    margin: 20px auto;
-    width: 80%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: #ffffff;
+    padding: 20px;
+    margin: 30px auto;
+    width: 85%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-size: 16px;
+    line-height: 1.6;
 }
